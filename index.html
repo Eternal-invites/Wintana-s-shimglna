@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>የዊንታና ሽምግልና — የክብር ግብዣ</title>
+  <meta name="description" content="የዊንታና ሽምግልና የክብር ግብዣ — እሁድ ህዳር 6 2019" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@300;400;500;600&family=Noto+Serif+Ethiopic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════ የመክፈቻ ገጽ ══════════════ -->
+  <section id="opener" class="opener" aria-label="የግብዣ መክፈቻ">
+    <div class="opener-glow" aria-hidden="true"></div>
+    <div class="opener-ornament opener-ornament--top" aria-hidden="true"></div>
+    <div class="opener-ornament opener-ornament--bottom" aria-hidden="true"></div>
+
+    <div class="envelope-stage" id="envelopeStage">
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+
+        <div class="envelope-card" id="envelopeCard">
+          <svg class="card-frame" viewBox="0 0 200 280" preserveAspectRatio="none" aria-hidden="true">
+            <rect class="frame-line" x="6" y="6" width="188" height="268" fill="none" />
+            <rect class="frame-line frame-line--inner" x="14" y="14" width="172" height="252" fill="none" />
+          </svg>
+          <div class="env-card-flourish" aria-hidden="true">❦</div>
+        </div>
+
+        <div class="envelope-front" aria-hidden="true"></div>
+        <div class="envelope-flap" id="envelopeFlap">
+          <div class="flap-inner"></div>
+        </div>
+        <div class="wax-seal" id="waxSeal" aria-hidden="true"><span>ዊ</span></div>
+      </div>
+    </div>
+
+    <div class="opener-text" id="openerText">
+      <h1 class="opener-title">የዊንታና ሽምግልና</h1>
+      <p class="opener-subtitle">የክብር ግብዣ</p>
+      <p class="opener-date">እሁድ ህዳር 6 2019</p>
+      <p class="opener-hint">የግብዣ ካርዱን ለመክፈት ይጫኑ</p>
+      <button id="openBtn" class="btn btn--gold opener-btn" type="button">ግብዣውን ይክፈቱ</button>
+    </div>
+  </section>
+
+  <!-- ══════════════ ዋናው የግብዣ ገጽ ══════════════ -->
+  <main id="invitation" class="invitation" hidden>
+    <div class="invitation-glow" aria-hidden="true"></div>
+
+    <div class="invite-card">
+      <div class="corner corner--tl" aria-hidden="true"></div>
+      <div class="corner corner--tr" aria-hidden="true"></div>
+      <div class="corner corner--bl" aria-hidden="true"></div>
+      <div class="corner corner--br" aria-hidden="true"></div>
+
+      <!-- ግብዣ -->
+      <section class="hero reveal">
+        <p class="hero-eyebrow">በክብር ይጋብዛችኋል!</p>
+        <h2 class="hero-title">የዊንታና ሽምግልና</h2>
+        <div class="divider" aria-hidden="true"><span></span><span class="divider-gem">✦</span><span></span></div>
+        <p class="hero-message">በደስታና በክብር ወደሚካሄደው የዊንታና ሽምግልና የእራት ፕሮግራም በመገኘት ደስታችንን እንድትጋሩን በአክብሮት እንጋብዛችኋለን።</p>
+      </section>
+
+      <!-- የቀን ቆጣሪ -->
+      <section class="countdown reveal" aria-label="የቀን ቆጣሪ">
+        <h3 class="section-title">እስከ የሽምግልናችን ቀን ድረስ</h3>
+        <div class="countdown-grid" id="countdownGrid">
+          <div class="count-box"><span class="count-num" id="days">00</span><span class="count-label">ቀናት</span></div>
+          <div class="count-box"><span class="count-num" id="hours">00</span><span class="count-label">ሰዓታት</span></div>
+          <div class="count-box"><span class="count-num" id="minutes">00</span><span class="count-label">ደቂቃዎች</span></div>
+          <div class="count-box"><span class="count-num" id="seconds">00</span><span class="count-label">ሰከንዶች</span></div>
+        </div>
+        <p class="countdown-done" id="countdownDone" hidden></p>
+      </section>
+
+      <!-- የግብዣ ዝርዝሮች -->
+      <section class="details reveal" aria-label="የግብዣ ዝርዝሮች">
+        <h3 class="section-title">የግብዣ ዝርዝሮች</h3>
+        <div class="details-list">
+          <div class="detail-card">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l2 3h-4l2-3zm0 18c-4 0-7-3-7-7h2c0 3 2 5 5 5s5-2 5-5h2c0 4-3 7-7 7zm-8-10h16v2H4v-2z"/></svg>
+            </div>
+            <div class="detail-text"><span class="detail-label">ጠሪ</span><span class="detail-value">ዊንታና ግሩም</span></div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 2h2v3h6V2h2v3h3a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h3V2zm13 7v11H4V9h16z"/></svg>
+            </div>
+            <div class="detail-text"><span class="detail-label">ቀን</span><span class="detail-value">እሁድ ህዳር 6 2019</span></div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke-width="1.6"/><path d="M12 6v6l4 2" fill="none" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <div class="detail-text"><span class="detail-label">ሰዓት</span><span class="detail-value">10:00 የአካባቢው ሰዓት</span></div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 9h16a2 2 0 002-2 5 5 0 00-5-5c-2 0-4 1-5 3-1-2-3-3-5-3A5 5 0 002 7a2 2 0 002 2zm0 2v8a2 2 0 002 2h12a2 2 0 002-2v-8H4z"/></svg>
+            </div>
+            <div class="detail-text"><span class="detail-label">የፕሮግራሙ ዓይነት</span><span class="detail-value">የእራት ፕሮግራም</span></div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 2l-4 3 2 2 1-1v14a2 2 0 002 2h4a2 2 0 002-2V6l1 1 2-2-4-3-3 2-3-2z"/></svg>
+            </div>
+            <div class="detail-text"><span class="detail-label">የአለባበስ ስርዓት</span><span class="detail-value">የሀበሻ ልብስ</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- የቦታ ክፍል -->
+      <section class="location reveal" aria-label="የፕሮግራሙ ቦታ">
+        <h3 class="section-title">የፕሮግራሙ ቦታ</h3>
+        <p class="location-message">የግብዣውን ቦታ ለማግኘት ከታች ያለውን አዝራር ይጫኑ።</p>
+        <a class="btn btn--outline" href="https://maps.app.goo.gl/JysWNoaoQc1VQ2F1A?g_st=atm" target="_blank" rel="noopener noreferrer">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 119.5 9 2.5 2.5 0 0112 11.5z"/></svg>
+          የቦታ አቅጣጫ ይመልከቱ
+        </a>
+      </section>
+
+      <!-- የምስጋና -->
+      <section class="closing reveal" aria-label="የመጨረሻ መልእክት">
+        <div class="closing-flourish" aria-hidden="true">❦ ❦ ❦</div>
+        <p class="closing-message">በመገኘታችሁ ደስታችንን እንድትጋሩን በክብር እንጠብቃችኋለን።</p>
+        <p class="closing-name">ዊንታና ግሩም</p>
+        <div class="divider" aria-hidden="true"><span></span><span class="divider-gem">✦</span><span></span></div>
+      </section>
+    </div>
+
+    <footer class="footer reveal">
+      <p>የዊንታና ሽምግልና · የክብር ግብዣ</p>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
